@@ -14,6 +14,7 @@ uint8_t const PFCommandRunningDefaultMaxAttemptsCount = 5;
 NSString *const PFCommandHeaderNameApplicationId = @"X-Parse-Application-Id";
 NSString *const PFCommandHeaderNameClientKey = @"X-Parse-Client-Key";
 NSString *const PFCommandHeaderNameClientVersion = @"X-Parse-Client-Version";
+NSString *const PFCommandHeaderNameMasterKey = @"X-Parse-Master-Key";
 NSString *const PFCommandHeaderNameInstallationId = @"X-Parse-Installation-Id";
 NSString *const PFCommandHeaderNameAppBuildVersion = @"X-Parse-App-Build-Version";
 NSString *const PFCommandHeaderNameAppDisplayVersion = @"X-Parse-App-Display-Version";

@@ -21,6 +21,7 @@ extern uint8_t const PFCommandRunningDefaultMaxAttemptsCount;
 
 extern NSString *const PFCommandHeaderNameApplicationId;
 extern NSString *const PFCommandHeaderNameClientKey;
+extern NSString *const PFCommandHeaderNameMasterKey;
 extern NSString *const PFCommandHeaderNameClientVersion;
 extern NSString *const PFCommandHeaderNameInstallationId;
 extern NSString *const PFCommandHeaderNameAppBuildVersion;

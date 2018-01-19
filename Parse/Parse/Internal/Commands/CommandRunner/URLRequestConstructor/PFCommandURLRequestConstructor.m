@@ -131,7 +131,8 @@
 
     mutableHeaders[PFCommandHeaderNameApplicationId] = applicationId;
     if (clientKey) {
-        mutableHeaders[PFCommandHeaderNameClientKey] = clientKey;
+        //mutableHeaders[PFCommandHeaderNameClientKey] = clientKey;
+        mutableHeaders[PFCommandHeaderNameMasterKey] = clientKey;
     }
 
     mutableHeaders[PFCommandHeaderNameClientVersion] = [versionPrefix stringByAppendingString:PARSE_VERSION];
