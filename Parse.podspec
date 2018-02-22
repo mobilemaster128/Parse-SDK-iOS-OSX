@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Parse'
-  s.version          = '1.16.0'
+  s.version          = '1.17.0-alpha.5'
   s.license          =  { :type => 'BSD', :file => 'LICENSE' }
   s.homepage         = 'http://parseplatform.org/'
   s.summary          = 'A library that gives you access to the powerful Parse cloud platform from your iOS/OS X/watchOS/tvOS app.'
@@ -23,6 +23,7 @@ Pod::Spec.new do |s|
     s.source_files = 'Parse/Parse/*.{h,m}',
                      'Parse/Parse/Internal/**/*.{h,m}'
     s.public_header_files = 'Parse/Parse/*.h'
+    s.private_header_files = 'Parse/Parse/Internal/**/*.h'
   
     s.ios.exclude_files = 'Parse/Parse/Internal/PFMemoryEventuallyQueue.{h,m}'
     s.osx.exclude_files = 'Parse/Parse/PFNetworkActivityIndicatorManager.{h,m}',
@@ -94,7 +95,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'FacebookUtils' do |s|
     s.platform = :ios, :tvos
-    s.ios.deployment_target = '9.0'
+    s.ios.deployment_target = '8.0'
     s.tvos.deployment_target = '9.0'
     s.public_header_files = 'ParseFacebookUtils/ParseFacebookUtils/*.h'
     s.source_files = 'ParseFacebookUtils/ParseFacebookUtils/**/*.{h,m}'

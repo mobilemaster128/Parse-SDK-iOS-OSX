@@ -13,7 +13,7 @@
 #pragma mark - SDK Version
 ///--------------------------------------
 
-#define PARSE_VERSION @"1.16.0"
+#define PARSE_VERSION @"1.17.0-alpha.5"
 
 ///--------------------------------------
 #pragma mark - Platform
@@ -383,6 +383,11 @@ extern NSString *const _Nonnull PFNetworkWillSendURLRequestNotification;
  The name of the notification that is going to be sent after any URL response is received.
  */
 extern NSString *const _Nonnull PFNetworkDidReceiveURLResponseNotification;
+
+/**
+ The name of the notification that is going to be sent when any request is failing with an invalid session token.
+ */
+extern NSString *const _Nonnull PFInvalidSessionTokenNotification;
 
 /**
  The key of request(NSURLRequest) in the userInfo dictionary of a notification.
